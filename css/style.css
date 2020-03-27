@@ -124,6 +124,28 @@ body {
 	background-position: left;
 }
 
+#team .bullet {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+	margin-top: 20%;
+	float: right;
+	margin-right: -2rem;
+	transform: rotate(90deg);
+}
+
+#team .bullet2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	margin-top: 30%;
+	float: left;
+	margin-left: -3rem;
+	transform: rotate(-90deg);
+}
+
 .card {
 	background-color: var(--assasinBlack);
 	border: solid 1px var(--graniteGrey);
