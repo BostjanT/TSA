@@ -1,0 +1,151 @@
+:root {
+	--neonGreen: #08f200;
+	--jetBlack: #333046;
+	--assasinBlack: rgb(39, 38, 51);
+	--graniteGrey: #5f6263;
+	--creamWhite: #f4fffb;
+	--silverish: #ccdbdc;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.viewport-100 {
+	min-height: 100vh;
+}
+
+.viewport-80 {
+	min-height: 80vh;
+}
+
+.viewport-60 {
+	min-height: 60vh;
+}
+
+.underline {
+	margin: 0 auto;
+	border: solid 2px var(--neonGreen);
+	width: 20%;
+}
+
+.full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	background-color: var(--jetBlack);
+	padding: 0;
+	margin: 0;
+	font-family: 'Sen', sans-serif;
+	color: var(--silverish);
+}
+
+/* ########## NAVBAR  ##########  */
+.navbar {
+	background-color: transparent;
+	margin-top: 2rem;
+	border: none;
+}
+
+.navbar-icon {
+	font-size: 2rem;
+	color: var(--neonGreen);
+}
+
+.navbar-collapse {
+	margin-left: 2rem;
+}
+
+.nav-item {
+	list-style: none;
+	margin-right: 20px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: var(--neonGreen) !important;
+}
+
+.nav-link:hover {
+	color: var(--creamWhite) !important;
+	border-bottom: solid 1px var(--neonGreen);
+}
+
+.navbar-toggler {
+	margin-left: 2rem;
+}
+
+.navbar-toggler .fa {
+	color: var(--neonGreen);
+}
+
+.navbar-dark {
+	color: var(--neonGreen) !important;
+}
+
+/* ########## HEADER  ##########  */
+#header {
+	position: relative;
+	min-height: 100vh;
+	background-image: url('/images/bcg_yt.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: .1rem solid var(--neonGreen);
+	outline-offset: -1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	display: inline-block;
+	width: 400px;
+}
+
+/* ########## TEAM CARDS  ##########  */
+#team {
+	background: linear-gradient(
+			rgba(39, 38, 51, .9),
+			rgba(39, 38, 51, .9)
+		),
+		url(/images/bullets.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: left;
+}
+
+.card {
+	background-color: var(--assasinBlack);
+	border: solid 1px var(--graniteGrey);
+	box-shadow: 0px 3px 17px 3px var(--neonGreen);
+}
+
+#icon {
+	font-size: 1.4rem;
+	color: var(--neonGreen);
+}
+
+#icon:hover {
+	color: var(--creamWhite);
+}
+
+/* #### MEDIA QUERIES #### */
+@media only screen and (max-width: 600px) {
+	#header {
+		min-height: 30vh;
+	}
+
+	.logo {
+		width: 200px;
+	}
+}
