@@ -146,6 +146,14 @@ body {
 	transform: rotate(-90deg);
 }
 
+@media only screen and (max-width: 720px) {
+	#team .bullet,
+	.bullet2 {
+		display: none;
+	}
+}
+
+
 .card {
 	background-color: var(--assasinBlack);
 	border: solid 1px var(--graniteGrey);
